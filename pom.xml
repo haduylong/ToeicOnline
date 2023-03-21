@@ -22,6 +22,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <servlet.api.version>2.3.3</servlet.api.version>
+    <jsp.api.version>4.0.1</jsp.api.version>
+    <mysql.connector.version>8.0.29</mysql.connector.version>
+    <hibernate.version>6.1.5.Final</hibernate.version>
   </properties>
   
   <dependencies>
@@ -29,14 +33,14 @@
 	<dependency>
 	    <groupId>javax.servlet</groupId>
 	    <artifactId>javax.servlet-api</artifactId>
-	    <version>4.0.1</version>
+	    <version>${jsp.api.version}</version>
 	    <scope>provided</scope>
 	</dependency>
 	<!-- servlet -->
 	<dependency>
 	    <groupId>javax.servlet.jsp</groupId>
 	    <artifactId>javax.servlet.jsp-api</artifactId>
-	    <version>2.3.3</version>
+	    <version>${servlet.api.version}</version>
 	    <scope>provided</scope>
 	</dependency>
 
@@ -44,7 +48,13 @@
 	<dependency>
 	    <groupId>mysql</groupId>
 	    <artifactId>mysql-connector-java</artifactId>
-	    <version>8.0.29</version>
+	    <version>${mysql.connector.version}</version>
+	</dependency>
+	<!-- hibernate -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>${hibernate.version}</version>
 	</dependency>
 
   </dependencies>
