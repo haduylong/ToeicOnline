@@ -8,4 +8,18 @@
   </parent>
   <artifactId>toeic-core-dao</artifactId>
   <packaging>jar</packaging>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>vn.myclass</groupId>
+  		<artifactId>toeic-core-data</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>vn.myclass</groupId>
+  		<artifactId>toeic-core-persistence-data</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>

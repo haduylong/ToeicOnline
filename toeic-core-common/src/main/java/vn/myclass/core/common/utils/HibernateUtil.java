@@ -1,5 +1,5 @@
 package vn.myclass.core.common.utils;
-
+// khởi tạo session factory
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
